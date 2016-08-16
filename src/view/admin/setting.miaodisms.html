@@ -1,0 +1,16 @@
+<div>
+	<label><h3>SEQ:</h3><input type='number' name='seq' value="$!global.getInt('miaodi.seq', 0)" /><g>短信模块发送顺序</g></label>
+</div>
+<div>
+	<label><h3>发送接口:</h3><input type='text' name='url' value="$!global.getString('miaodi.url', 'https://api.miaodiyun.com/20150822')" /><g>请从<a href='http://www.miaodiyun.com/doc/https_sms.html' target='_blank'>秒嘀</a>获取</g></label>
+</div>
+<div>
+	<label><h3>ACCOUNT SID:</h3><input type='text' name='account_sid' value='$!global.getString("miaodi.account_sid", "")' /><g>请从<a href='http://www.miaodiyun.com/AfterLogin.action' target='_blank'>秒嘀</a>获取</g></label>
+</div>
+<div>
+	<label><h3>AUTH TOKEN:</h3><input type='text' name='auth_token' value='$!global.getString("miaodi.auth_token", "")' /><g>请从<a href='http://www.miaodiyun.com/AfterLogin.action' target='_blank'>秒嘀</a>获取</g></label>
+</div>
+<div>
+	<label><h3>模版:</h3><textarea name='template'>$!global.getString('miaodi.template','')</textarea><g>按照code定义模版，每个对应以“;”分隔,内部code＝$code...， etc：user.forget.password=[xxx]xxx,$code, ....;</g></label>
+</div>
+
