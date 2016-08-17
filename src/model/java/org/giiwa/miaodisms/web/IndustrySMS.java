@@ -123,7 +123,7 @@ public class IndustrySMS implements Sms.ISender {
       for (String s1 : ss) {
         String[] s2 = s1.split("[=＝]");
         if (s2.length == 2) {
-          m1.put(s2[0], s2[1]);
+          m1.put(s2[0].trim(), s2[1].trim());
         }
       }
       log.debug("templates=" + m1);
