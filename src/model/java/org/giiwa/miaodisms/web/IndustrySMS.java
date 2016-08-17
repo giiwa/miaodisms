@@ -89,6 +89,8 @@ public class IndustrySMS implements Sms.ISender {
   public boolean send(String phone, JSON jo) {
     reset();
 
+    log.debug("sendsms, jo=" + jo);
+
     String template = jo.getString("template");
     String content = templates.get(template);
     if (!X.isEmpty(content)) {
@@ -124,6 +126,7 @@ public class IndustrySMS implements Sms.ISender {
           m1.put(s2[0], s2[1]);
         }
       }
+      log.debug("templates=" + m1);
       templates = m1;
     }
   }
