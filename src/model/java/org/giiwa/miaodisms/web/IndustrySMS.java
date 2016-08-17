@@ -106,7 +106,13 @@ public class IndustrySMS implements Sms.ISender {
       JSON j1 = JSON.fromObject(result);
       log.debug("result=" + result + ", j1=" + j1);
 
-      return j1 != null && X.isSame("00000", j1.getString("respCode"));
+      if (j1 != null && X.isSame("00000", j1.getString("respCode"))) {
+        OpLog.info("sms", "send", "sendsms, jo=" + jo + ", result=" + result, null);
+        return true;
+      } else {
+        OpLog.warn("sms", "send", "sendsms, jo=" + jo + ", result=" + result, null);
+        return false;
+      }
     } else {
       OpLog.info("sms", "[" + template + "] missed, jo=" + jo, null);
     }
