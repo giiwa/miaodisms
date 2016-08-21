@@ -13,7 +13,6 @@
 	<classpathentry kind="lib" path="depends/hawtdispatch-1.20.jar"/>
 	<classpathentry kind="lib" path="depends/activation-1.1.jar"/>
 	<classpathentry kind="lib" path="depends/metadata-extractor-2.6.4.jar"/>
-	<classpathentry kind="lib" path="depends/archive-1.0.1.jar"/>
 	<classpathentry kind="lib" path="depends/hsqldb-2.3.4.jar"/>
 	<classpathentry kind="lib" path="depends/httpmime-4.3.4.jar"/>
 	<classpathentry kind="lib" path="depends/jsch-0.1.53.jar"/>
@@ -53,7 +52,6 @@
 	<classpathentry kind="lib" path="depends/qpid-amqp-1-0-client-0.26.jar"/>
 	<classpathentry kind="lib" path="depends/mail-1.4.jar"/>
 	<classpathentry kind="lib" path="depends/qpid-amqp-1-0-client-jms-0.26.jar"/>
-	<classpathentry kind="lib" path="depends/js-1.7.6.jar"/>
 	<classpathentry kind="lib" path="depends/httpasyncclient-4.1.jar"/>
 	<classpathentry kind="lib" path="depends/activemq-client-5.10.0.jar"/>
 	<classpathentry kind="lib" path="depends/batik-transcoder-1.6.jar"/>

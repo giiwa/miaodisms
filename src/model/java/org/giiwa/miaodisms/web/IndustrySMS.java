@@ -14,8 +14,8 @@ import org.apache.commons.logging.LogFactory;
 import org.giiwa.core.bean.X;
 import org.giiwa.core.conf.Global;
 import org.giiwa.core.json.JSON;
+import org.giiwa.core.noti.Sms;
 import org.giiwa.framework.bean.OpLog;
-import org.giiwa.framework.noti.Sms;
 import org.giiwa.framework.web.Language;
 
 /**

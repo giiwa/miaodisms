@@ -5,7 +5,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.giiwa.app.web.admin.setting;
 import org.giiwa.core.conf.Global;
-import org.giiwa.framework.noti.Sms;
+import org.giiwa.core.noti.Sms;
 import org.giiwa.framework.web.IListener;
 import org.giiwa.framework.web.Module;
 import org.giiwa.miaodisms.web.admin.miaodisms;
